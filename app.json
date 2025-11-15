@@ -48,7 +48,7 @@
     "plugins": [
       "expo-notifications",
       [
-        "@revenuecat/purchases-expo",
+        "@revenuecat/react-native-purchases",
         {
           "android": {
             "apiKey": "goog_RywrphqBCAsGrSrYXqtuessmyTu"
@@ -80,7 +80,8 @@
         "dataCollected": ["email", "subscription_info"],
         "dataShared": ["analytics_opt_in"],
         "securityPractices": ["encryption", "no_sell_data"]
-      }
+      },
+      "revenueCatApiKey": "goog_RywrphqBCAsGrSrYXqtuessmyTu"
     }
   }
 }
