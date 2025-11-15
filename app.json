@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "UPSC AI Mentor",
+    "slug": "upsc-ai-mentor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.upscai.mentor"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.upscai.mentor",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "CAMERA",
+        "NOTIFICATIONS",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyDzoLf6CC8mIRcBoTEP-f2lNBN2Yb7677o"
+        },
+        "notification": {
+          "channelId": "default"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-notifications",
+      [
+        "@revenuecat/purchases-expo",
+        {
+          "android": {
+            "apiKey": "goog_RywrphqBCAsGrSrYXqtuessmyTu"
+          }
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0",
+            "proguardFiles": ["proguard-android.txt"]
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      },
+      "privacyPolicyUrl": "https://upscai-mentor.com/privacy",
+      "dataSafety": {
+        "appType": "educational",
+        "dataCollected": ["email", "subscription_info"],
+        "dataShared": ["analytics_opt_in"],
+        "securityPractices": ["encryption", "no_sell_data"]
+      }
+    }
+  }
+}
