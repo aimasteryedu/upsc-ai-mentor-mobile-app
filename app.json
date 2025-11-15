@@ -47,7 +47,6 @@
     },
     "plugins": [
       "expo-notifications",
-      "react-native-purchases",
       [
         "expo-build-properties",
         {
@@ -55,7 +54,9 @@
             "compileSdkVersion": 34,
             "targetSdkVersion": 34,
             "buildToolsVersion": "34.0.0",
-            "proguardFiles": ["proguard-android.txt"]
+            "proguardFiles": [
+              "proguard-android.txt"
+            ]
           }
         }
       ]
@@ -64,17 +65,30 @@
       "typedRoutes": true
     },
     "extra": {
-      "eas": {
-        "projectId": "your-project-id"
-      },
       "privacyPolicyUrl": "https://upscai-mentor.com/privacy",
       "dataSafety": {
         "appType": "educational",
-        "dataCollected": ["email", "subscription_info"],
-        "dataShared": ["analytics_opt_in"],
-        "securityPractices": ["encryption", "no_sell_data"]
+        "dataCollected": [
+          "email",
+          "subscription_info",
+          "email",
+          "subscription_info"
+        ],
+        "dataShared": [
+          "analytics_opt_in",
+          "analytics_opt_in"
+        ],
+        "securityPractices": [
+          "encryption",
+          "no_sell_data",
+          "encryption",
+          "no_sell_data"
+        ]
       },
-      "revenueCatApiKey": "goog_RywrphqBCAsGrSrYXqtuessmyTu"
-    }
+      "eas": {
+        "projectId": "adc1c201-db44-4138-8a4f-39079ccd21a6"
+      }
+    },
+    "owner": "aimasteryedu"
   }
 }
