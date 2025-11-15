@@ -47,14 +47,7 @@
     },
     "plugins": [
       "expo-notifications",
-      [
-        "@revenuecat/react-native-purchases",
-        {
-          "android": {
-            "apiKey": "goog_RywrphqBCAsGrSrYXqtuessmyTu"
-          }
-        }
-      ],
+      "react-native-purchases",
       [
         "expo-build-properties",
         {
